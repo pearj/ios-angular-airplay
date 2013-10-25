@@ -18,32 +18,9 @@
   <script src="js/controllers.js"></script>
   <script src="js/filters.js"></script>
   <script src="js/services.js"></script>
-    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-    <script type="text/javascript" src="js/plugins/ExternalScreen.js"></script>
-     <script type="text/javascript">
 
-function onBodyLoad()
-	{
-		document.addEventListener("deviceready", onDeviceReady, false);
-	}
-
-	function onDeviceReady()
-	{
-        PGExternalScreen.setupScreenConnectionNotificationHandlers( resultHandler, errorHandler );
-    }
-
-    function resultHandler (result) {
-        //dislpay an alert using a timeout so that it doesn't block loading of the webView content
-        setTimeout( function() { alert("SUCCESS: \r\n"+result) }, 100 );
-    }
-
-    function errorHandler (error) {
-        alert("ERROR: \r\n"+error);
-    }
-
-    </script>
 </head>
-<body onload="onBodyLoad()">
+<body>
 
   <div class="view-container">
     <div ng-view class="view-frame"></div>

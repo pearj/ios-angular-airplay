@@ -13,9 +13,9 @@ phonecatControllers.controller('PhoneListCtrl', ['$scope', 'Phone', '$location',
           window.location = '#/phones/' + url;
        }
        else {
-          PGExternalScreen.loadHTMLResource('index.html#/phones/' + url);
+          PGExternalScreen.loadHTMLResource('second.html#/phones/' + url);
        }
-       console.log('index.html#/phones/' + url);
+       console.log('second.html#/phones/' + url);
     }
   }]);
 
