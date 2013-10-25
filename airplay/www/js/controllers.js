@@ -13,7 +13,7 @@ phonecatControllers.controller('PhoneListCtrl', ['$scope', 'Phone', '$location',
           window.location = '#/phones/' + url;
        }
        else {
-          PGExternalScreen.loadHTMLResource('second.html#/phones/' + url);
+          PGExternalScreen.invokeJavaScript('(function(){window.location = "#/phones/' + url + '"})()');
        }
        console.log('second.html#/phones/' + url);
     }

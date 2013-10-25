@@ -34,7 +34,8 @@ function onBodyLoad()
 
     function resultHandler (result) {
         //dislpay an alert using a timeout so that it doesn't block loading of the webView content
-        setTimeout( function() { alert("SUCCESS: \r\n"+result) }, 100 );
+//        setTimeout( function() { alert("SUCCESS: \r\n"+result) }, 100 );
+        PGExternalScreen.loadHTMLResource("second.html");
     }
 
     function errorHandler (error) {
